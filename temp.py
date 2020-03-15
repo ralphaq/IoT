@@ -4,7 +4,7 @@ import Adafruit_IO, time
 import RPi.GPIO as G
 
 G.setmode(G.BCM)
-aio = Adafruit_IO.Client("suryaprakash", "aio_Ernv77exF5vUONyV1qOgTTp7L1e0")
+aio = Adafruit_IO.Client("suryaprakash", "aio_GYlJ74aZq8btJ3uprb31MkEGo5im")
 
 for i in pin:
     G.setup(i, G.OUT)
