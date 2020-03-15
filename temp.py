@@ -12,7 +12,7 @@ for i in pin:
 
 while 1:
     for x in btn :
-        if aio.receive(x) == "ON":
+        if aio.receive(x).value == "ON":
             G.output(btn[x], 1)
             print(btn[x], "on")
         else :
