@@ -1,5 +1,5 @@
 pin = [2, 3, 20, 21]
-btn = {"s1" : 2 , "s2" : 3, "s3": 20, "s4" : 21]
+btn = {"s1" : 2 , "s2" : 3, "s3": 20, "s4" : 21}
 import Adafruit_IO, time
 import RPi.GPIO as G
 
@@ -12,7 +12,7 @@ for i in pin:
 
 while 1:
     for x in btn :
-        if aio.receive(x) == "ON"
+        if aio.receive(x) == "ON":
             G.output(btn[x], 1)
             print(btn[x], "on")
         else :
